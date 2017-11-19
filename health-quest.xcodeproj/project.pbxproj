@@ -1,0 +1,837 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F3C3725A059B3AF68FF1398 /* Pods_health_quest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE9A28FDB8D3DB7CEFF09973 /* Pods_health_quest.framework */; };
+		688BFEAD710D1348D567D392 /* Pods_health_questTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 024472D68142A310197F5611 /* Pods_health_questTests.framework */; };
+		ACAD47E24F9F5727B1385061 /* Pods_health_questUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CFC8E741D57DAA7A1864E73 /* Pods_health_questUITests.framework */; };
+		F951AEC31F9C13D00057EF9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951AEC21F9C13D00057EF9D /* AppDelegate.swift */; };
+		F951AEC51F9C13D00057EF9D /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951AEC41F9C13D00057EF9D /* MainVC.swift */; };
+		F951AEC81F9C13D00057EF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F951AEC61F9C13D00057EF9D /* Main.storyboard */; };
+		F951AECA1F9C13D00057EF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F951AEC91F9C13D00057EF9D /* Assets.xcassets */; };
+		F951AECD1F9C13D00057EF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F951AECB1F9C13D00057EF9D /* LaunchScreen.storyboard */; };
+		F951AED81F9C13D00057EF9D /* health_questTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951AED71F9C13D00057EF9D /* health_questTests.swift */; };
+		F951AEE31F9C13D00057EF9D /* health_questUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951AEE21F9C13D00057EF9D /* health_questUITests.swift */; };
+		F951AEF31F9C14B30057EF9D /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F951AEF21F9C14B30057EF9D /* HealthKit.framework */; };
+		F951AEF51F9C15A50057EF9D /* HealthStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F951AEF41F9C15A50057EF9D /* HealthStore.swift */; };
+		F9FA71891FA5E1540014FD4F /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA71881FA5E1540014FD4F /* Permission.swift */; };
+		F9FA718C1FA5E82F0014FD4F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FA718B1FA5E82F0014FD4F /* Config.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F951AED41F9C13D00057EF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F951AEB71F9C13D00057EF9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F951AEBE1F9C13D00057EF9D;
+			remoteInfo = "health-quest";
+		};
+		F951AEDF1F9C13D00057EF9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F951AEB71F9C13D00057EF9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F951AEBE1F9C13D00057EF9D;
+			remoteInfo = "health-quest";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		024472D68142A310197F5611 /* Pods_health_questTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_health_questTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0EE74AD6897692F742BA1956 /* Pods-health-questTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health-questTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-health-questTests/Pods-health-questTests.release.xcconfig"; sourceTree = "<group>"; };
+		27154F7515F303ABAA0AF15C /* Pods-health-quest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health-quest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-health-quest/Pods-health-quest.debug.xcconfig"; sourceTree = "<group>"; };
+		3CFC8E741D57DAA7A1864E73 /* Pods_health_questUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_health_questUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		439E92B4CD12625F7A24B2AA /* Pods-health-questUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health-questUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-health-questUITests/Pods-health-questUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A7B97832C409826F9AE74490 /* Pods-health-questTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health-questTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-health-questTests/Pods-health-questTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB73874E23D11F3C1898F550 /* Pods-health-quest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health-quest.release.xcconfig"; path = "Pods/Target Support Files/Pods-health-quest/Pods-health-quest.release.xcconfig"; sourceTree = "<group>"; };
+		EE9A28FDB8D3DB7CEFF09973 /* Pods_health_quest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_health_quest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F951AEBF1F9C13D00057EF9D /* health-quest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "health-quest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F951AEC21F9C13D00057EF9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F951AEC41F9C13D00057EF9D /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F951AEC71F9C13D00057EF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F951AEC91F9C13D00057EF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F951AECC1F9C13D00057EF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F951AECE1F9C13D00057EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F951AED31F9C13D00057EF9D /* health-questTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "health-questTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F951AED71F9C13D00057EF9D /* health_questTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = health_questTests.swift; sourceTree = "<group>"; };
+		F951AED91F9C13D00057EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F951AEDE1F9C13D00057EF9D /* health-questUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "health-questUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F951AEE21F9C13D00057EF9D /* health_questUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = health_questUITests.swift; sourceTree = "<group>"; };
+		F951AEE41F9C13D00057EF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F951AEF01F9C14B30057EF9D /* health-quest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "health-quest.entitlements"; sourceTree = "<group>"; };
+		F951AEF21F9C14B30057EF9D /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		F951AEF41F9C15A50057EF9D /* HealthStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthStore.swift; sourceTree = "<group>"; };
+		F9FA71881FA5E1540014FD4F /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		F9FA718B1FA5E82F0014FD4F /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FFF4A510507CCBFD4877178C /* Pods-health-questUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-health-questUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-health-questUITests/Pods-health-questUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F951AEBC1F9C13D00057EF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F951AEF31F9C14B30057EF9D /* HealthKit.framework in Frameworks */,
+				4F3C3725A059B3AF68FF1398 /* Pods_health_quest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F951AED01F9C13D00057EF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				688BFEAD710D1348D567D392 /* Pods_health_questTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F951AEDB1F9C13D00057EF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACAD47E24F9F5727B1385061 /* Pods_health_questUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		52D25E0E99DB044D521C9E5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27154F7515F303ABAA0AF15C /* Pods-health-quest.debug.xcconfig */,
+				CB73874E23D11F3C1898F550 /* Pods-health-quest.release.xcconfig */,
+				A7B97832C409826F9AE74490 /* Pods-health-questTests.debug.xcconfig */,
+				0EE74AD6897692F742BA1956 /* Pods-health-questTests.release.xcconfig */,
+				439E92B4CD12625F7A24B2AA /* Pods-health-questUITests.debug.xcconfig */,
+				FFF4A510507CCBFD4877178C /* Pods-health-questUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F951AEB61F9C13D00057EF9D = {
+			isa = PBXGroup;
+			children = (
+				F951AEC11F9C13D00057EF9D /* health-quest */,
+				F951AED61F9C13D00057EF9D /* health-questTests */,
+				F951AEE11F9C13D00057EF9D /* health-questUITests */,
+				F951AEC01F9C13D00057EF9D /* Products */,
+				F951AEF11F9C14B30057EF9D /* Frameworks */,
+				52D25E0E99DB044D521C9E5D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F951AEC01F9C13D00057EF9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F951AEBF1F9C13D00057EF9D /* health-quest.app */,
+				F951AED31F9C13D00057EF9D /* health-questTests.xctest */,
+				F951AEDE1F9C13D00057EF9D /* health-questUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F951AEC11F9C13D00057EF9D /* health-quest */ = {
+			isa = PBXGroup;
+			children = (
+				F951AEF61F9C15AA0057EF9D /* Model */,
+				F992CC5A1FC18BA100B9E933 /* View */,
+				F992CC5B1FC18BA700B9E933 /* Controller */,
+				F9FA718A1FA5E7F00014FD4F /* Configuration */,
+				F951AEC21F9C13D00057EF9D /* AppDelegate.swift */,
+				F951AEC91F9C13D00057EF9D /* Assets.xcassets */,
+				F951AECB1F9C13D00057EF9D /* LaunchScreen.storyboard */,
+				F951AEF01F9C14B30057EF9D /* health-quest.entitlements */,
+				F951AECE1F9C13D00057EF9D /* Info.plist */,
+			);
+			path = "health-quest";
+			sourceTree = "<group>";
+		};
+		F951AED61F9C13D00057EF9D /* health-questTests */ = {
+			isa = PBXGroup;
+			children = (
+				F951AED71F9C13D00057EF9D /* health_questTests.swift */,
+				F951AED91F9C13D00057EF9D /* Info.plist */,
+			);
+			path = "health-questTests";
+			sourceTree = "<group>";
+		};
+		F951AEE11F9C13D00057EF9D /* health-questUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F951AEE21F9C13D00057EF9D /* health_questUITests.swift */,
+				F951AEE41F9C13D00057EF9D /* Info.plist */,
+			);
+			path = "health-questUITests";
+			sourceTree = "<group>";
+		};
+		F951AEF11F9C14B30057EF9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F951AEF21F9C14B30057EF9D /* HealthKit.framework */,
+				EE9A28FDB8D3DB7CEFF09973 /* Pods_health_quest.framework */,
+				024472D68142A310197F5611 /* Pods_health_questTests.framework */,
+				3CFC8E741D57DAA7A1864E73 /* Pods_health_questUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F951AEF61F9C15AA0057EF9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F951AEF41F9C15A50057EF9D /* HealthStore.swift */,
+				F9FA71881FA5E1540014FD4F /* Permission.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F992CC5A1FC18BA100B9E933 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F951AEC61F9C13D00057EF9D /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F992CC5B1FC18BA700B9E933 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F951AEC41F9C13D00057EF9D /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F9FA718A1FA5E7F00014FD4F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F9FA718B1FA5E82F0014FD4F /* Config.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F951AEBE1F9C13D00057EF9D /* health-quest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F951AEE71F9C13D00057EF9D /* Build configuration list for PBXNativeTarget "health-quest" */;
+			buildPhases = (
+				C70DA9601C36CD664A02D278 /* [CP] Check Pods Manifest.lock */,
+				F951AEBB1F9C13D00057EF9D /* Sources */,
+				F951AEBC1F9C13D00057EF9D /* Frameworks */,
+				F951AEBD1F9C13D00057EF9D /* Resources */,
+				04A558FB1974CB2D95107615 /* [CP] Embed Pods Frameworks */,
+				0063DF7F808685BF96A3271F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "health-quest";
+			productName = "health-quest";
+			productReference = F951AEBF1F9C13D00057EF9D /* health-quest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F951AED21F9C13D00057EF9D /* health-questTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F951AEEA1F9C13D00057EF9D /* Build configuration list for PBXNativeTarget "health-questTests" */;
+			buildPhases = (
+				D60332424DEDF93140A76906 /* [CP] Check Pods Manifest.lock */,
+				F951AECF1F9C13D00057EF9D /* Sources */,
+				F951AED01F9C13D00057EF9D /* Frameworks */,
+				F951AED11F9C13D00057EF9D /* Resources */,
+				C19DF5F4E40DA8603AB80285 /* [CP] Embed Pods Frameworks */,
+				D698D1D9D9C5BC9820B4A71B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F951AED51F9C13D00057EF9D /* PBXTargetDependency */,
+			);
+			name = "health-questTests";
+			productName = "health-questTests";
+			productReference = F951AED31F9C13D00057EF9D /* health-questTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F951AEDD1F9C13D00057EF9D /* health-questUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F951AEED1F9C13D00057EF9D /* Build configuration list for PBXNativeTarget "health-questUITests" */;
+			buildPhases = (
+				D68D651F8E49F1804EA36B57 /* [CP] Check Pods Manifest.lock */,
+				F951AEDA1F9C13D00057EF9D /* Sources */,
+				F951AEDB1F9C13D00057EF9D /* Frameworks */,
+				F951AEDC1F9C13D00057EF9D /* Resources */,
+				F26A8A3129031F7C992C0C01 /* [CP] Embed Pods Frameworks */,
+				95BB80E122684D1DED72851D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F951AEE01F9C13D00057EF9D /* PBXTargetDependency */,
+			);
+			name = "health-questUITests";
+			productName = "health-questUITests";
+			productReference = F951AEDE1F9C13D00057EF9D /* health-questUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F951AEB71F9C13D00057EF9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = PxlBorn;
+				TargetAttributes = {
+					F951AEBE1F9C13D00057EF9D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					F951AED21F9C13D00057EF9D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F951AEBE1F9C13D00057EF9D;
+					};
+					F951AEDD1F9C13D00057EF9D = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F951AEBE1F9C13D00057EF9D;
+					};
+				};
+			};
+			buildConfigurationList = F951AEBA1F9C13D00057EF9D /* Build configuration list for PBXProject "health-quest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F951AEB61F9C13D00057EF9D;
+			productRefGroup = F951AEC01F9C13D00057EF9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F951AEBE1F9C13D00057EF9D /* health-quest */,
+				F951AED21F9C13D00057EF9D /* health-questTests */,
+				F951AEDD1F9C13D00057EF9D /* health-questUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F951AEBD1F9C13D00057EF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F951AECD1F9C13D00057EF9D /* LaunchScreen.storyboard in Resources */,
+				F951AECA1F9C13D00057EF9D /* Assets.xcassets in Resources */,
+				F951AEC81F9C13D00057EF9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F951AED11F9C13D00057EF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F951AEDC1F9C13D00057EF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0063DF7F808685BF96A3271F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-health-quest/Pods-health-quest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		04A558FB1974CB2D95107615 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-health-quest/Pods-health-quest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookShare/FacebookShare.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookShare.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-health-quest/Pods-health-quest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95BB80E122684D1DED72851D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-health-questUITests/Pods-health-questUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C19DF5F4E40DA8603AB80285 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-health-questTests/Pods-health-questTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C70DA9601C36CD664A02D278 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-health-quest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D60332424DEDF93140A76906 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-health-questTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D68D651F8E49F1804EA36B57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-health-questUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D698D1D9D9C5BC9820B4A71B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-health-questTests/Pods-health-questTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26A8A3129031F7C992C0C01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-health-questUITests/Pods-health-questUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F951AEBB1F9C13D00057EF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9FA71891FA5E1540014FD4F /* Permission.swift in Sources */,
+				F951AEC51F9C13D00057EF9D /* MainVC.swift in Sources */,
+				F9FA718C1FA5E82F0014FD4F /* Config.swift in Sources */,
+				F951AEF51F9C15A50057EF9D /* HealthStore.swift in Sources */,
+				F951AEC31F9C13D00057EF9D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F951AECF1F9C13D00057EF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F951AED81F9C13D00057EF9D /* health_questTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F951AEDA1F9C13D00057EF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F951AEE31F9C13D00057EF9D /* health_questUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F951AED51F9C13D00057EF9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F951AEBE1F9C13D00057EF9D /* health-quest */;
+			targetProxy = F951AED41F9C13D00057EF9D /* PBXContainerItemProxy */;
+		};
+		F951AEE01F9C13D00057EF9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F951AEBE1F9C13D00057EF9D /* health-quest */;
+			targetProxy = F951AEDF1F9C13D00057EF9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F951AEC61F9C13D00057EF9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F951AEC71F9C13D00057EF9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F951AECB1F9C13D00057EF9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F951AECC1F9C13D00057EF9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F951AEE51F9C13D00057EF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F951AEE61F9C13D00057EF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F951AEE81F9C13D00057EF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27154F7515F303ABAA0AF15C /* Pods-health-quest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "health-quest/health-quest.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9255R54EV;
+				INFOPLIST_FILE = "health-quest/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pxlborn.health-quest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F951AEE91F9C13D00057EF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB73874E23D11F3C1898F550 /* Pods-health-quest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "health-quest/health-quest.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9255R54EV;
+				INFOPLIST_FILE = "health-quest/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pxlborn.health-quest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F951AEEB1F9C13D00057EF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B97832C409826F9AE74490 /* Pods-health-questTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9255R54EV;
+				INFOPLIST_FILE = "health-questTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pxlborn.health-questTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/health-quest.app/health-quest";
+			};
+			name = Debug;
+		};
+		F951AEEC1F9C13D00057EF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EE74AD6897692F742BA1956 /* Pods-health-questTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9255R54EV;
+				INFOPLIST_FILE = "health-questTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pxlborn.health-questTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/health-quest.app/health-quest";
+			};
+			name = Release;
+		};
+		F951AEEE1F9C13D00057EF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 439E92B4CD12625F7A24B2AA /* Pods-health-questUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9255R54EV;
+				INFOPLIST_FILE = "health-questUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pxlborn.health-questUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "health-quest";
+			};
+			name = Debug;
+		};
+		F951AEEF1F9C13D00057EF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF4A510507CCBFD4877178C /* Pods-health-questUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P9255R54EV;
+				INFOPLIST_FILE = "health-questUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.pxlborn.health-questUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "health-quest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F951AEBA1F9C13D00057EF9D /* Build configuration list for PBXProject "health-quest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F951AEE51F9C13D00057EF9D /* Debug */,
+				F951AEE61F9C13D00057EF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F951AEE71F9C13D00057EF9D /* Build configuration list for PBXNativeTarget "health-quest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F951AEE81F9C13D00057EF9D /* Debug */,
+				F951AEE91F9C13D00057EF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F951AEEA1F9C13D00057EF9D /* Build configuration list for PBXNativeTarget "health-questTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F951AEEB1F9C13D00057EF9D /* Debug */,
+				F951AEEC1F9C13D00057EF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F951AEED1F9C13D00057EF9D /* Build configuration list for PBXNativeTarget "health-questUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F951AEEE1F9C13D00057EF9D /* Debug */,
+				F951AEEF1F9C13D00057EF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F951AEB71F9C13D00057EF9D /* Project object */;
+}
