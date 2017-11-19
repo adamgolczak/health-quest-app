@@ -6,4 +6,4 @@ App fetches informations from Apple Health about:
 - Body Weight
 - Active Energy
 
-![image](https://raw.githubusercontent.com/adamgolczak/health-quest-app/master/cover.png  =250x)
+![image](https://raw.githubusercontent.com/adamgolczak/health-quest-app/master/cover.png)
