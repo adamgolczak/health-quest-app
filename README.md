@@ -1,4 +1,4 @@
-# HeathKit Simple App (healthkit-simple-app)
+# HealthKit Simple App (healthkit-simple-app)
 
 App fetches informations from Apple Health about:
 - Body Fat Precentage
